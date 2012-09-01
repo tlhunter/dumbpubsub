@@ -7,13 +7,20 @@ be able to subscribe to events from your Node.js application.
 
 For example, if a client updates their email address, and you want to alert
 your PHP application so that it can perhaps change some memcache entry it
-uses, this module will work for you.
+uses, this module is what you are looking for.
 
 External apps can provide an event to bind on to, and a URL to listen on.
 When the event occurs, the relevant data is POSTed to said URL.
 
-The module will use EventEmitter, and hopefully be able to store subscription
-informaiton in either Redis or MongoDB or JSON on disk.
+Long term goals for this project include saving the subscription data to either
+a Redis or MongoDB database. The first iteration will only save it to a local
+JSON file. There may eventually be so many entries that keeping it in Node memory
+wouldn't work, so will have to explore that.
+
+Also, you wouldn't want to use this for inter-nodejs-app communications, for
+that you would want to use someone elses library.
+
+This code is currently broken, don't bother pulling it.
 
 Example Requests
 ===
@@ -38,18 +45,4 @@ Example Requests
 Example Server Code
 ===
 
-    pubsub = require('dumbpubsub');
-
-    pubsub.restoreSubscription(dataStore); // Load existing subscriptions from disk
-
-    pubsub.attach(expressApp); // Attach to an existing express/http instance
-
-    pubsub.listen(); // Listen for new requests
-
-    // POSTs this data to clients who have subscribed to the client-info-update event
-    pubsub.emit('client-info-update', {
-        clientId: 230948230,
-        oldEmail: 'tlhunter@gmail.com',
-        newEmail: 'tlhunter+github@gmail.com'
-    });
-
+https://github.com/tlhunter/dumbpubsub/blob/master/server.js

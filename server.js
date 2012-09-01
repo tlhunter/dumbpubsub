@@ -1,28 +1,30 @@
-var pubsub = require('dumbpubsub');
+var dumb = require('dumbpubsub');
 var express = require('express');
 
 var app = express(); // Create an Express app
-pubsub.attach(app); // DumbPubSub will now use the existing Express app
+dumb.attach(app); // DumbPubSub will now use the existing Express app
 
-pubsub.notifyEvent(); // By default, we don't tell client what even was run, assuming their URL will let them know
+dumb.notifyEvent(); // By default, we don't tell client what was run, we assume their URL will let them know
 
+// Normal application requests work as expected
 app.get('/', function(req, res) {
     res.send('hello world');
 });
 
-pubsub.subscribe('client-update', 'http://localhost/x');
-pubsub.subscribe('client-update', 'http://localhost/y');
-pubsub.subscribe('client-delete', 'http://localhost/x');
+// You wouldn't normally do this, external apps would handle the subscriptions
+dumb.subscribe('client-update', 'http://localhost/app/listener/update');
+dumb.subscribe('client-update', 'http://localhost/app2/listener/update');
+dumb.subscribe('client-delete', 'http://localhost/app/listener/delete');
+dumb.subscribe('client-create', 'http://localhost/app/listener/create');
 
-pubsub.listen('/subscribe'); // The DumbPubSub listen method defines the root URL
+dumb.listen('/subscribe'); // The DumbPubSub listen method defines the root URL
 
-app.listen(3000);
-
-console.log('listening');
+app.listen(3000); // Express (and DumbPubSub) both listen on the same port
+console.log('Listening for incomming HTTP requests.');
 
 // Emit an event after 10 seconds
 setTimeout(function() {
-    pubsub.emit('client-update', {
+    dumb.emit('client-update', {
         clientId: 230948230,
         oldEmail: 'tlhunter@gmail.com',
         newEmail: 'tlhunter+github@gmail.com'
