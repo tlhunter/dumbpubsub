@@ -11,10 +11,8 @@ app.get('/', function(req, res) {
     res.send('hello world');
 });
 
-// You wouldn't normally do this, external apps would handle the subscriptions
-dumb.subscribe('client-update', 'http://localhost/~thunter/?type=client-update-1');
-dumb.subscribe('client-update', 'http://localhost/~thunter/?type=client-update-2');
-dumb.subscribe('client-create', 'http://localhost/~thunter/?type=client-create');
+// One day we will pass in a redis or mongodb connection, but for now just a filename
+dumb.restore('subscriptions.json');
 
 dumb.listen('/subscribe'); // The DumbPubSub listen method defines the root URL
 

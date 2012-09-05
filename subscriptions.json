@@ -1,0 +1,14 @@
+[
+    {
+        "event": "client-update",
+        "url": "http://localhost/~thunter/?type=client-update-1"
+    },
+    {
+        "event": "client-update",
+        "url": "http://localhost/~thunter/?type=client-update-2"
+    },
+    {
+        "event": "client-create",
+        "url": "http://localhost/~thunter/?type=client-create"
+    }
+]
