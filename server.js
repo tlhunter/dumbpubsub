@@ -12,10 +12,9 @@ app.get('/', function(req, res) {
 });
 
 // You wouldn't normally do this, external apps would handle the subscriptions
-dumb.subscribe('client-update', 'http://localhost/app/listener/update');
-dumb.subscribe('client-update', 'http://localhost/app2/listener/update');
-dumb.subscribe('client-delete', 'http://localhost/app/listener/delete');
-dumb.subscribe('client-create', 'http://localhost/app/listener/create');
+dumb.subscribe('client-update', 'http://localhost/~thunter/?type=client-update-1');
+dumb.subscribe('client-update', 'http://localhost/~thunter/?type=client-update-2');
+dumb.subscribe('client-create', 'http://localhost/~thunter/?type=client-create');
 
 dumb.listen('/subscribe'); // The DumbPubSub listen method defines the root URL
 
