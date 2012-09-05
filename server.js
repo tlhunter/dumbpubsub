@@ -11,6 +11,14 @@ app.get('/', function(req, res) {
     res.send('hello world');
 });
 
+// Allows us to trigger an event using a browser, for testing purposes
+app.get('/trigger/:event', function(req, res) {
+    dumb.emit(req.route.params.event, {
+        from: 'web'
+    });
+    res.send(200);
+});
+
 // One day we will pass in a redis or mongodb connection, but for now just a filename
 dumb.restore('subscriptions.json');
 
