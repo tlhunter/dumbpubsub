@@ -20,26 +20,24 @@ wouldn't work, so will have to explore that.
 Also, you wouldn't want to use this for inter-nodejs-app communications, for
 that you would want to use someone elses library.
 
-This code is currently broken, don't bother pulling it.
-
 Example Requests
 ===
 
     POST /subscribe
-    event_name
-    callback_url
+    P:event
+    P:url
     Success: 201 CREATED
     Failure: 409 CONFLICT
 
     DELETE /subscribe
-    event_name
-    callback_url
+    (G:event)
+    (G:url)
     Success: 200 OK
     Failure: 404 NOT FOUND
 
     GET /subscribe
-    (event_name)
-    (callback_url)
+    (G:event)
+    (G:url)
     Success: 200 OK
 
 Example Server Code
