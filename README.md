@@ -46,3 +46,10 @@ Example Server Code
 ===
 
 https://github.com/tlhunter/dumbpubsub/blob/master/server.js
+
+Debugging
+===
+
+Here's a tool for Chrome that allows you to make various HTTP requests:
+
+https://chrome.google.com/webstore/detail/hgmloofddffdnphfgcellkdfbfbjeloo
