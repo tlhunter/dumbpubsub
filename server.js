@@ -6,7 +6,7 @@ var app = express(); // Create an Express app
 dumb.attach(app) // DumbPubSub will now use the existing Express app
     .notifyEvent() // By default, we don't tell client what was run, we assume their URL will let them know
     .persistOnExit() // Makes sure we save all subscriptions to disk when we quit
-    .restore('subscriptions.json')
+    .restore('subscriptions.json') // Reads this file for subscription info
     .setUrl('/subscribe') // Sets the URL which we listen on
     .enable(); // Tells the express app that we want to listen on some URLs
 
