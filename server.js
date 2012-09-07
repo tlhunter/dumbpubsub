@@ -2,6 +2,7 @@ var dumb = require('dumbpubsub');
 var express = require('express');
 
 var app = express(); // Create an Express app
+app.use(express.bodyParser());
 
 dumb.attach(app) // DumbPubSub will now use the existing Express app
     .notifyEvent() // By default, we don't tell client what was run, we assume their URL will let them know
@@ -22,8 +23,6 @@ app.get('/trigger/:event', function(req, res) {
     });
     res.send(200);
 });
-
-// One day we will pass in a redis or mongodb connection, but for now just a filename
 
 app.listen(3000); // Express (and DumbPubSub) both listen on the same port
 console.log('Listening for incomming HTTP requests.');

@@ -30,8 +30,8 @@ Example Requests
     Failure: 409 CONFLICT
 
     DELETE /subscribe
-    (G:event)
-    (G:url)
+    (P/G:event)
+    (P/G:url)
     Success: 200 OK
     Failure: 404 NOT FOUND
 
