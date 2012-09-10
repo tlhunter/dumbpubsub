@@ -43,7 +43,7 @@ Example Requests
 Example Server Code
 ===
 
-    var dumb = require('dumbpubsub');
+    var dumb = require('dumb');
     // npm install express
     var express = require('express');
 
