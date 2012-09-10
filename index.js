@@ -2,6 +2,29 @@ var fs = require('fs');
 var util = require('util');
 var request = require('request');
 
+/**
+ * Determins if an array or object is empty
+ */
+function isEmpty(obj) {
+    // Array
+    if (typeof obj.length === 'number' && obj.length === 0) {
+        return !obj.length;
+    }
+    // Object
+    return !Object.getOwnPropertyNames(obj).length;
+}
+
+/**
+ * Iterates over each array or object property and runs a callback(value, key)
+ */
+function forEach(obj, callback) {
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            callback(obj[key], key);
+        }
+    }
+}
+
 var DumbPubSub = function() {
     var self = this;
 
@@ -343,29 +366,6 @@ var DumbPubSub = function() {
             });
         });
     };
-
-    /**
-     * Determins if an array or object is empty
-     */
-    function isEmpty(obj) {
-        // Array
-        if (typeof obj.length === 'number' && obj.length === 0) {
-            return !obj.length;
-        }
-        // Object
-        return !Object.getOwnPropertyNames(obj).length;
-    }
-
-    /**
-     * Iterates over each array or object property and runs a callback(value, key)
-     */
-    function forEach(obj, callback) {
-        for (var key in obj) {
-            if (obj.hasOwnProperty(key)) {
-                callback(obj[key], key);
-            }
-        }
-    }
 };
 
 module.exports = new DumbPubSub();
