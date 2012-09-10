@@ -1,0 +1,353 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose publish [ '.' ]
+5 verbose read json /Volumes/Server/DumbPubSub/node_modules/dumb/package.json
+6 verbose cache add [ '.', null ]
+7 silly cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { pathname: '.', path: '.', href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/tlhunter/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/tmp.tgz
+14 verbose folder .
+15 info prepublish dumb@0.1.1
+16 silly lockFile 2b13d417-085212-0-953876405954361-tmp-tgz /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/tmp.tgz
+17 verbose lock /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/tmp.tgz /Users/tlhunter/.npm/2b13d417-085212-0-953876405954361-tmp-tgz.lock
+18 silly lockFile 2b13d417-085212-0-953876405954361-tmp-tgz /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/tmp.tgz
+19 verbose tar unpack /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/tmp.tgz
+20 silly lockFile 69604a29-085212-0-953876405954361-package /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package
+21 verbose lock /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package /Users/tlhunter/.npm/69604a29-085212-0-953876405954361-package.lock
+22 silly gunzTarPerm modes [ '777', '666' ]
+23 silly gunzTarPerm extractEntry package.json
+24 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+25 silly gunzTarPerm extractEntry README.md
+26 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+27 silly gunzTarPerm extractEntry index.js
+28 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+29 silly gunzTarPerm extractEntry php/index.php
+30 silly gunzTarPerm modified mode [ 'php/index.php', 420, 438 ]
+31 silly gunzTarPerm extractEntry node_modules/request/package.json
+32 silly gunzTarPerm extractEntry node_modules/request/README.md
+33 silly gunzTarPerm extractEntry node_modules/request/LICENSE
+34 silly gunzTarPerm extractEntry node_modules/request/aws.js
+35 silly gunzTarPerm extractEntry node_modules/request/forever.js
+36 silly gunzTarPerm extractEntry node_modules/request/main.js
+37 silly gunzTarPerm extractEntry node_modules/request/uuid.js
+38 silly gunzTarPerm extractEntry node_modules/request/tunnel.js
+39 silly gunzTarPerm extractEntry node_modules/request/oauth.js
+40 silly gunzTarPerm extractEntry node_modules/request/tests/test-https-strict.js
+41 silly gunzTarPerm extractEntry node_modules/request/tests/test-form.js
+42 silly gunzTarPerm extractEntry node_modules/request/tests/test-headers.js
+43 silly gunzTarPerm extractEntry node_modules/request/tests/test-httpModule.js
+44 silly gunzTarPerm extractEntry node_modules/request/tests/run.js
+45 silly gunzTarPerm extractEntry node_modules/request/tests/test-follow-all.js
+46 silly gunzTarPerm extractEntry node_modules/request/tests/test-oauth.js
+47 silly gunzTarPerm extractEntry node_modules/request/tests/test-params.js
+48 silly gunzTarPerm extractEntry node_modules/request/tests/test-pipes.js
+49 silly gunzTarPerm extractEntry node_modules/request/tests/test-pool.js
+50 silly gunzTarPerm extractEntry node_modules/request/tests/test-protocol-changing-redirect.js
+51 silly gunzTarPerm extractEntry node_modules/request/tests/test-follow-all-303.js
+52 silly gunzTarPerm extractEntry node_modules/request/tests/test-proxy.js
+53 silly gunzTarPerm extractEntry node_modules/request/tests/test-errors.js
+54 silly gunzTarPerm extractEntry node_modules/request/tests/test-qs.js
+55 silly gunzTarPerm extractEntry node_modules/request/tests/test-defaults.js
+56 silly gunzTarPerm extractEntry node_modules/request/tests/test-redirect.js
+57 silly gunzTarPerm extractEntry node_modules/request/tests/test-cookiejar.js
+58 silly gunzTarPerm extractEntry node_modules/request/tests/test-s3.js
+59 silly gunzTarPerm extractEntry node_modules/request/tests/test-cookie.js
+60 silly gunzTarPerm extractEntry node_modules/request/tests/test-timeout.js
+61 silly gunzTarPerm extractEntry node_modules/request/tests/test-body.js
+62 silly gunzTarPerm extractEntry node_modules/request/tests/test-toJSON.js
+63 silly gunzTarPerm extractEntry node_modules/request/tests/server.js
+64 silly gunzTarPerm extractEntry node_modules/request/tests/test-tunnel.js
+65 silly gunzTarPerm extractEntry node_modules/request/tests/test-https.js
+66 silly gunzTarPerm extractEntry node_modules/request/tests/googledoodle.png
+67 silly gunzTarPerm extractEntry node_modules/request/tests/squid.conf
+68 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.js
+69 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.srl
+70 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.crt
+71 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.csr
+72 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.key
+73 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.crl
+74 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.cnf
+75 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.crt
+76 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.csr
+77 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.cnf
+78 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.key
+79 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/npm-ca.crt
+80 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/test.crt
+81 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/test.key
+82 silly gunzTarPerm extractEntry node_modules/request/tests/unicycle.jpg
+83 silly gunzTarPerm extractEntry node_modules/request/vendor/cookie/index.js
+84 silly gunzTarPerm extractEntry node_modules/request/vendor/cookie/jar.js
+85 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/package.json
+86 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/.npmignore
+87 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/Makefile
+88 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/Readme.md
+89 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/lib/form_data.js
+90 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node-form-data.sublime-project
+91 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node-form-data.sublime-workspace
+92 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/common.js
+93 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/run.js
+94 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/fixture/bacon.txt
+95 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/fixture/unicycle.jpg
+96 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-form-get-length.js
+97 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-get-boundary.js
+98 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-http-response.js
+99 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-pipe.js
+100 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-submit.js
+101 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/package.json
+102 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/README.md
+103 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/LICENSE
+104 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/index.js
+105 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/dist/async.min.js
+106 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/deps/nodeunit.js
+107 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/deps/nodeunit.css
+108 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/Makefile
+109 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/.gitmodules
+110 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/lib/async.js
+111 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/nodelint.cfg
+112 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/async.min.js.gzip
+113 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/test/test-async.js
+114 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/test/.swp
+115 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/test/test.html
+116 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json
+117 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/.npmignore
+118 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/License
+119 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/Makefile
+120 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/Readme.md
+121 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js
+122 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/common.js
+123 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/run.js
+124 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file1.txt
+125 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file2.txt
+126 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-callback-streams.js
+127 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-data-size.js
+128 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams-and-buffers-and-strings.js
+129 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams.js
+130 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-max-data-size.js
+131 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-unpaused-streams.js
+132 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json
+133 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.npmignore
+134 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/License
+135 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Makefile
+136 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Readme.md
+137 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js
+138 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/common.js
+139 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/run.js
+140 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-http-upload.js
+141 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-auto-pause.js
+142 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-pause.js
+143 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream.js
+144 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js
+145 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-max-data-size.js
+146 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-pipe-resumes.js
+147 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-proxy-readable.js
+148 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/package.json
+149 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/README.md
+150 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/LICENSE
+151 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/mime.js
+152 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/test.js
+153 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/types/mime.types
+154 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/types/node.types
+155 verbose read json /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package/package.json
+156 silly lockFile 69604a29-085212-0-953876405954361-package /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package
+157 verbose from cache /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package/package.json
+158 verbose tar pack [ '/Users/tlhunter/.npm/dumb/0.1.1/package.tgz',
+158 verbose tar pack   '/var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package' ]
+159 verbose tarball /Users/tlhunter/.npm/dumb/0.1.1/package.tgz
+160 verbose folder /var/folders/r6/b1vrzwys4ybckbptghhtgm0h0000gn/T/npm-8454/1347302085212-0.953876405954361/package
+161 silly lockFile f4461e6a-unter-npm-dumb-0-1-1-package-tgz /Users/tlhunter/.npm/dumb/0.1.1/package.tgz
+162 verbose lock /Users/tlhunter/.npm/dumb/0.1.1/package.tgz /Users/tlhunter/.npm/f4461e6a-unter-npm-dumb-0-1-1-package-tgz.lock
+163 silly lockFile f4461e6a-unter-npm-dumb-0-1-1-package-tgz /Users/tlhunter/.npm/dumb/0.1.1/package.tgz
+164 silly lockFile b6d297dc--tlhunter-npm-dumb-0-1-1-package /Users/tlhunter/.npm/dumb/0.1.1/package
+165 verbose lock /Users/tlhunter/.npm/dumb/0.1.1/package /Users/tlhunter/.npm/b6d297dc--tlhunter-npm-dumb-0-1-1-package.lock
+166 silly lockFile b6d297dc--tlhunter-npm-dumb-0-1-1-package /Users/tlhunter/.npm/dumb/0.1.1/package
+167 verbose tar unpack /Users/tlhunter/.npm/dumb/0.1.1/package.tgz
+168 silly lockFile b6d297dc--tlhunter-npm-dumb-0-1-1-package /Users/tlhunter/.npm/dumb/0.1.1/package
+169 verbose lock /Users/tlhunter/.npm/dumb/0.1.1/package /Users/tlhunter/.npm/b6d297dc--tlhunter-npm-dumb-0-1-1-package.lock
+170 silly gunzTarPerm modes [ '777', '666' ]
+171 silly gunzTarPerm extractEntry package.json
+172 silly gunzTarPerm extractEntry README.md
+173 silly gunzTarPerm extractEntry index.js
+174 silly gunzTarPerm extractEntry php/index.php
+175 silly gunzTarPerm extractEntry node_modules/request/package.json
+176 silly gunzTarPerm extractEntry node_modules/request/README.md
+177 silly gunzTarPerm extractEntry node_modules/request/LICENSE
+178 silly gunzTarPerm extractEntry node_modules/request/main.js
+179 silly gunzTarPerm extractEntry node_modules/request/uuid.js
+180 silly gunzTarPerm extractEntry node_modules/request/oauth.js
+181 silly gunzTarPerm extractEntry node_modules/request/forever.js
+182 silly gunzTarPerm extractEntry node_modules/request/tunnel.js
+183 silly gunzTarPerm extractEntry node_modules/request/aws.js
+184 silly gunzTarPerm extractEntry node_modules/request/tests/test-https-strict.js
+185 silly gunzTarPerm extractEntry node_modules/request/tests/test-form.js
+186 silly gunzTarPerm extractEntry node_modules/request/tests/test-headers.js
+187 silly gunzTarPerm extractEntry node_modules/request/tests/test-httpModule.js
+188 silly gunzTarPerm extractEntry node_modules/request/tests/run.js
+189 silly gunzTarPerm extractEntry node_modules/request/tests/test-follow-all.js
+190 silly gunzTarPerm extractEntry node_modules/request/tests/test-oauth.js
+191 silly gunzTarPerm extractEntry node_modules/request/tests/test-params.js
+192 silly gunzTarPerm extractEntry node_modules/request/tests/test-pipes.js
+193 silly gunzTarPerm extractEntry node_modules/request/tests/test-pool.js
+194 silly gunzTarPerm extractEntry node_modules/request/tests/test-protocol-changing-redirect.js
+195 silly gunzTarPerm extractEntry node_modules/request/tests/test-follow-all-303.js
+196 silly gunzTarPerm extractEntry node_modules/request/tests/test-proxy.js
+197 silly gunzTarPerm extractEntry node_modules/request/tests/test-errors.js
+198 silly gunzTarPerm extractEntry node_modules/request/tests/test-qs.js
+199 silly gunzTarPerm extractEntry node_modules/request/tests/test-defaults.js
+200 silly gunzTarPerm extractEntry node_modules/request/tests/test-redirect.js
+201 silly gunzTarPerm extractEntry node_modules/request/tests/test-cookiejar.js
+202 silly gunzTarPerm extractEntry node_modules/request/tests/test-s3.js
+203 silly gunzTarPerm extractEntry node_modules/request/tests/test-cookie.js
+204 silly gunzTarPerm extractEntry node_modules/request/tests/test-timeout.js
+205 silly gunzTarPerm extractEntry node_modules/request/tests/test-body.js
+206 silly gunzTarPerm extractEntry node_modules/request/tests/test-toJSON.js
+207 silly gunzTarPerm extractEntry node_modules/request/tests/server.js
+208 silly gunzTarPerm extractEntry node_modules/request/tests/test-tunnel.js
+209 silly gunzTarPerm extractEntry node_modules/request/tests/test-https.js
+210 silly gunzTarPerm extractEntry node_modules/request/tests/googledoodle.png
+211 silly gunzTarPerm extractEntry node_modules/request/tests/squid.conf
+212 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.js
+213 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.srl
+214 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.crt
+215 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.csr
+216 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.key
+217 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.crl
+218 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.cnf
+219 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.crt
+220 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.csr
+221 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/ca.cnf
+222 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/ca/server.key
+223 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/npm-ca.crt
+224 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/test.crt
+225 silly gunzTarPerm extractEntry node_modules/request/tests/ssl/test.key
+226 silly gunzTarPerm extractEntry node_modules/request/tests/unicycle.jpg
+227 silly gunzTarPerm extractEntry node_modules/request/vendor/cookie/index.js
+228 silly gunzTarPerm extractEntry node_modules/request/vendor/cookie/jar.js
+229 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/package.json
+230 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/.npmignore
+231 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/lib/form_data.js
+232 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/Makefile
+233 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node-form-data.sublime-project
+234 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node-form-data.sublime-workspace
+235 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/Readme.md
+236 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/common.js
+237 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/run.js
+238 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/fixture/bacon.txt
+239 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/fixture/unicycle.jpg
+240 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-form-get-length.js
+241 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-get-boundary.js
+242 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-http-response.js
+243 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-pipe.js
+244 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/test/integration/test-submit.js
+245 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/package.json
+246 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/README.md
+247 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/LICENSE
+248 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/index.js
+249 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/.gitmodules
+250 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/lib/async.js
+251 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/async.min.js.gzip
+252 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/Makefile
+253 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/nodelint.cfg
+254 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/deps/nodeunit.js
+255 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/deps/nodeunit.css
+256 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/dist/async.min.js
+257 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/test/test-async.js
+258 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/test/.swp
+259 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/async/test/test.html
+260 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json
+261 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/.npmignore
+262 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js
+263 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/License
+264 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/Makefile
+265 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/Readme.md
+266 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/common.js
+267 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/run.js
+268 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file1.txt
+269 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file2.txt
+270 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-callback-streams.js
+271 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-data-size.js
+272 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams-and-buffers-and-strings.js
+273 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams.js
+274 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-max-data-size.js
+275 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-unpaused-streams.js
+276 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json
+277 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.npmignore
+278 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js
+279 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/License
+280 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Makefile
+281 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Readme.md
+282 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/common.js
+283 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/run.js
+284 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-http-upload.js
+285 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-auto-pause.js
+286 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-pause.js
+287 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream.js
+288 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js
+289 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-max-data-size.js
+290 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-pipe-resumes.js
+291 silly gunzTarPerm extractEntry node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-proxy-readable.js
+292 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/package.json
+293 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/README.md
+294 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/LICENSE
+295 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/mime.js
+296 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/test.js
+297 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/types/mime.types
+298 silly gunzTarPerm extractEntry node_modules/request/node_modules/mime/types/node.types
+299 verbose read json /Users/tlhunter/.npm/dumb/0.1.1/package/package.json
+300 silly lockFile b6d297dc--tlhunter-npm-dumb-0-1-1-package /Users/tlhunter/.npm/dumb/0.1.1/package
+301 silly shasum updated bytes 40960
+302 silly shasum updated bytes 40960
+303 silly shasum updated bytes 40960
+304 silly shasum updated bytes 40960
+305 silly shasum updated bytes 31926
+306 info shasum 658e025566f438b1517e64f6294ef2d82b2d0084
+306 info shasum /Users/tlhunter/.npm/dumb/0.1.1/package.tgz
+307 verbose from cache /Users/tlhunter/.npm/dumb/0.1.1/package/package.json
+308 verbose chmod /Users/tlhunter/.npm/dumb/0.1.1/package.tgz 666
+309 verbose chown /Users/tlhunter/.npm/dumb/0.1.1/package.tgz [ 501, 80 ]
+310 silly lockFile 3a52ce78- .
+311 silly publish { name: 'dumb',
+311 silly publish   version: '0.1.1',
+311 silly publish   author: { name: 'Thomas Hunter', email: 'tlhunter@gmail.com' },
+311 silly publish   description: 'Allows non-evented apps to subscribe to Node.js events over HTTP',
+311 silly publish   contributors: [ { name: 'Thomas Hunter', email: 'tlhunter@gmail.com' } ],
+311 silly publish   repository:
+311 silly publish    { type: 'git',
+311 silly publish      url: 'https://github.com/tlhunter/dumbpubsub.git' },
+311 silly publish   keywords: [ 'pubsub', 'http', 'server' ],
+311 silly publish   bundleDependencies: [ 'request' ],
+311 silly publish   dependencies: { request: '2.11.0' },
+311 silly publish   license: 'Dual GPL/BSD',
+311 silly publish   engines: { node: '>=0.6' },
+311 silly publish   readme: 'DumbPubSub\n===\n\nThis module is for Node.js applications in a heterogeneus environment, where\nyou want your non long-running-process applications (such as a PHP app) to\nbe able to subscribe to events from your Node.js application.\n\nFor example, if a client updates their email address, and you want to alert\nyour PHP application so that it can perhaps change some memcache entry it\nuses, this module is what you are looking for.\n\nExternal apps can provide an event to bind on to, and a URL to listen on.\nWhen the event occurs, the relevant data is POSTed to said URL.\n\nLong term goals for this project include saving the subscription data to either\na Redis or MongoDB database. The first iteration will only save it to a local\nJSON file. There may eventually be so many entries that keeping it in Node memory\nwouldn\'t work, so will have to explore that.\n\nAlso, you wouldn\'t want to use this for inter-nodejs-app communications, for\nthat you would want to use someone elses library.\n\nExample Requests\n===\n\n    POST /subscribe\n    P:event\n    P:url\n    Success: 201 CREATED\n    Failure: 409 CONFLICT\n\n    DELETE /subscribe\n    (P/G:event)\n    (P/G:url)\n    Success: 200 OK\n    Failure: 404 NOT FOUND\n\n    GET /subscribe\n    (G:event)\n    (G:url)\n    Success: 200 OK\n\nExample Server Code\n===\n\n    var dumb = require(\'dumbpubsub\');\n    // npm install express\n    var express = require(\'express\');\n\n    var app = express(); // Create an Express app\n    app.use(express.bodyParser());\n\n    dumb.attach(app) // DumbPubSub will now use the existing Express app\n        .notifyEvent() // By default, we don\'t tell client what was run, we assume their URL will let them know\n        .persistOnExit() // Makes sure we save all subscriptions to disk when we quit\n        .restore(\'subscriptions.json\') // Reads this file for subscription info\n        .setUrl(\'/subscribe\') // Sets the URL which we listen on\n        .enable(); // Tells the express app that we want to listen on some URLs\n\n    // Normal application requests work as expected\n    app.get(\'/\', function(req, res) {\n        res.send(\'hello world\');\n    });\n\n    // Allows us to trigger an event using a browser, for testing purposes\n    app.get(\'/trigger/:event\', function(req, res) {\n        dumb.emit(req.route.params.event, {\n            from: \'web\'\n        });\n        res.send(200);\n    });\n\n    app.listen(3000); // Express (and DumbPubSub) both listen on the same port\n    console.log(\'Listening for incomming HTTP requests.\');\n\n    // Emit an event after 10 seconds\n    setTimeout(function() {\n        dumb.emit(\'client-update\', {\n            clientId: 230948230,\n            oldEmail: \'tlhunter@gmail.com\',\n            newEmail: \'tlhunter+github@gmail.com\'\n        });\n    }, 10000);\n\nExample subscriptions.json\n===\n\n    [\n        {\n            "event": "client-update",\n            "url": "http://localhost/listener.php"\n        }\n    ]\n\nInstallation\n===\n\n    npm install dumb express\n    # copy server.js code from above\n    # copy subscriptions.json code from above\n    npm server.js\n\nDebugging\n===\n\nHere\'s a tool for Chrome that allows you to make various HTTP requests:\n\nhttps://chrome.google.com/webstore/detail/hgmloofddffdnphfgcellkdfbfbjeloo\n\nLicense\n===\n\nDual BSD/GPL\n',
+311 silly publish   _id: 'dumb@0.1.1',
+311 silly publish   dist: { shasum: '658e025566f438b1517e64f6294ef2d82b2d0084' } }
+312 verbose url raw dumb
+313 verbose url resolving [ 'https://registry.npmjs.org/', './dumb' ]
+314 verbose url resolved https://registry.npmjs.org/dumb
+315 info retry registry request attempt 1 at 14:34:46
+316 http PUT https://registry.npmjs.org/dumb
+317 http 409 https://registry.npmjs.org/dumb
+318 verbose url raw dumb
+319 verbose url resolving [ 'https://registry.npmjs.org/', './dumb' ]
+320 verbose url resolved https://registry.npmjs.org/dumb
+321 info retry registry request attempt 1 at 14:34:47
+322 http GET https://registry.npmjs.org/dumb
+323 http 200 https://registry.npmjs.org/dumb
+324 error publish fail Cannot publish over existing version.
+324 error publish fail Bump the 'version' field, set the --force flag, or
+324 error publish fail     npm unpublish 'dumb@0.1.1'
+324 error publish fail and try again
+325 error System Darwin 12.1.0
+326 error command "node" "/usr/local/bin/npm" "publish"
+327 error cwd /Volumes/Server/DumbPubSub/node_modules/dumb
+328 error node -v v0.8.8
+329 error npm -v 1.1.59
+330 error code EPUBLISHCONFLICT
+331 verbose exit [ 1, true ]
