@@ -92,9 +92,22 @@ Example subscriptions.json
         }
     ]
 
+Installation
+===
+
+    npm install dumb express
+    # copy server.js code from above
+    # copy subscriptions.json code from above
+    npm server.js
+
 Debugging
 ===
 
 Here's a tool for Chrome that allows you to make various HTTP requests:
 
 https://chrome.google.com/webstore/detail/hgmloofddffdnphfgcellkdfbfbjeloo
+
+License
+===
+
+Dual BSD/GPL
