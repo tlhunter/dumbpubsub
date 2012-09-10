@@ -1,0 +1,31 @@
+{
+  "name": "dumb",
+  "version": "0.1.1",
+  "author": "Thomas Hunter <tlhunter@gmail.com>",
+  "description": "Allows non-evented apps to subscribe to Node.js events over HTTP",
+  "contributors": [ 
+    {
+      "name": "Thomas Hunter",
+      "email": "tlhunter@gmail.com"
+    } 
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlhunter/dumbpubsub.git"
+  },
+  "keywords": [
+    "pubsub",
+    "http",
+    "server"
+  ],
+  "bundleDependencies": [
+    "request"
+  ],
+  "dependencies" : {
+    "request": "2.11.0"
+  },
+  "license": "Dual GPL/BSD",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
