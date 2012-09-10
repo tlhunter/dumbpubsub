@@ -1,6 +1,6 @@
 {
   "name": "dumb",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Thomas Hunter <tlhunter@gmail.com>",
   "description": "Allows non-evented apps to subscribe to Node.js events over HTTP",
   "contributors": [ 
